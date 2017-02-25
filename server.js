@@ -1,3 +1,7 @@
+/**
+ * [nodejs server]
+ * version 1 - 20170225
+ */
 var MongoClient = require('mongodb').MongoClient;
 var colors = require('colors');
 var express = require('express');
@@ -33,10 +37,12 @@ app.set('views', 'pages');
 
 //pages
 app.get('/', function (req,res) {
+       
        res.render('index', { titre:'Home'});
 });
 
 app.get('/form', function(req, res){
+       
         res.render('formulaire', { titre:'formulaire', message:''});
 });
 
@@ -66,6 +72,7 @@ app.get('/porcupinefish', function(req, res){
 app.get('/frogs', function(req, res){
     var collection = maDb.collection('frogs');
     collection.find().toArray(function(err, data){
+           
         res.render('frogs', { titre:'Black-webbed tree frogs', soustitre: '(© Hendy MP/Solent News/REX)', msgCom:comments.msgCom(data), messages:data});
     });
 });
@@ -123,19 +130,16 @@ app.use(function(req, res, next){
       if (req.accepts('html')) {
         res.render('404', { url: req.url });
         return;
-      }
-  //res.type('txt').send('Not found');
+      } 
 });
 
-MongoClient.connect(URL, function(err, db) {
-     //console.log(db);
+MongoClient.connect(URL, function(err, db) { 
      maDb = db;
   if (err) {
     console.log(colors.bold.bgRed('   connection db failed !!!  '));
     return;
   }
-  app.listen(8080, function() {
-
+  app.listen(8080, function() {  
     console.log(colors.bold.bgGreen('      Le serveur est disponible sur le port 8080      '));
   });
 });
