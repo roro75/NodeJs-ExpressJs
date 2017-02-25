@@ -15,5 +15,5 @@ version.1 Sample pages with gallery and add comments form
   - add dynamically to home and footer menu new element uploaded via form
   - use 'router' for node server
   
-[![N|Solid](http://romeo.lascoux.fr/git/nodejs-expressjs.jpg)]
+![N|Solid](http://romeo.lascoux.fr/git/nodejs-expressjs.jpg)]
  
