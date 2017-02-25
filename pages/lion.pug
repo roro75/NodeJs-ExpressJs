@@ -1,0 +1,38 @@
+doctype html
+html(lang='en')
+    include ../includes/head.pug
+    body
+    h1= titre
+    h2= soustitre
+    .container
+        .col-lg-12
+            a(href='/')
+                img(src='../img/PantheraLeo_EN-US7653600919_1366x768.jpg', alt='image')
+            .row
+              .col-lg-8.col-centered
+                p
+                  | June 15, 2014    
+                p
+                  | The male African lion – instantly recognizable thanks to his mane – isn’t the tenderest father in the animal kingdom. Cubs are generally reared by most of the females in a given pride. Female lions also run the day-to-day business of hunting and protecting the pride from predators. But the male will share his food with his own cubs. In fact, male lions are more likely to share with their cubs than with lionesses. Male lions in preserves and zoos tend to be more tolerant of their cubs than those in the wild, even on Father’s Day.
+
+                  div
+                  input.btn.btn-default.display-form(type='button', value='envoyer un message')
+                  .formulaire        
+                      form(action='/reponse?r=lion' method='post') 
+                        include ../includes/form.pug
+                  h2 commentaires        
+                  .messages.clearfix
+                      p= msgCom
+                      each val, index in messages
+                          div
+                            .col-lg-8.col-xs-8.user
+                                h2= val.auteur
+                            .col-lg-4.col-xs-4.date
+                                span= val.date
+                            .col-lg-12.col-xs-12.texte    
+                                p !{val.texte}  
+
+
+                  include ../includes/menu.pug
+
+                  include ../includes/footer.pug 

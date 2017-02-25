@@ -1,0 +1,30 @@
+doctype html
+html(lang='en')
+    include ../includes/head.pug
+    body
+    h1= titre
+    h2= soustitre
+    .container
+        .col-lg-12
+            a(href='/')
+                img(src='../img/SpottedPorcupinefish_EN-US11134793223_1366x768.jpg', alt='image')
+            .row
+                .col-lg-8.col-centered
+            
+                    p
+                      | July 14, 2016
+                    p
+                      | Uninflated, the spot-fin porcupinefish has a bulbous head and bulging eyes, giving it a sort of cartoonish look. But it’s no laughing matter when a predator approaches: The porcupinefish inflates itself by drawing in water, which makes the spines that cover its skin stick out. This warning is often enough to startle any attacker. But woe to the sharks and other large fish that decide to take a bite anyhow, spines and all. A powerful toxin collects in various organs of the porcupinefish’s body, so if the spines don’t get you, the poison will. Who’s cute now?
+
+                      div
+                      input.btn.btn-default.display-form(type='button', value='Poster un commentaire')
+                      .formulaire        
+                          form(action='/reponse?r=porcupinefish' method='post') 
+                            include ../includes/form.pug
+                      h2 comments
+
+                      include ../includes/message.pug
+
+                      include ../includes/menu.pug
+
+                      include ../includes/footer.pug  

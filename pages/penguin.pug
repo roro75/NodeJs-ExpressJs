@@ -1,0 +1,29 @@
+doctype html
+html(lang='en')
+    include ../includes/head.pug
+    body
+    h1= titre
+    h2= soustitre
+    .container
+        .col-lg-12
+            a(href='/')
+                img(src='../img/PenguinSchool_EN-US11478383380_1366x768.jpg', alt='image')
+            .row
+              .col-lg-8.col-centered
+                p
+                  | October 5, 2016    
+                p
+                  | For World Teachers' Day, we offer this photo of emperor penguin chicks getting a lesson from a wise and tolerant adult—at least that's how it looks to us. The tallest and heaviest of the penguins, emperors lay their eggs during the bone-splitting Antarctic winter. This particular image was taken at the emperor breeding colony on Snow Hill Island.
+
+                  div
+                  input.btn.btn-default.display-form(type='button', value='Poster un commentaire')
+                  .formulaire        
+                      form(action='/reponse?r=penguin' method='post') 
+                        include ../includes/form.pug
+                  h2 comments
+                  
+                  include ../includes/message.pug
+                  
+                  include ../includes/menu.pug
+
+                  include ../includes/footer.pug  

@@ -1,0 +1,31 @@
+doctype html
+html(lang='en')
+    include ../includes/head.pug
+    body
+    h1= titre
+    h2= soustitre
+    .container
+        .col-lg-12
+            a(href='/')
+                img(src='../img/TurtleNTang_1366x768.jpg', alt='image')
+            .row
+              .col-lg-8.col-centered
+                p
+                  | May 23, 2013    
+                p
+                  | At first glance, this green sea turtle appears to be giving his fish buddies a ride in honor of today's World Turtle Day. But something else is going on here. Each day, reef fish like these gather in a symbiotic "cleaning station" to clean off turtles' shells. The fish eat algae and parasites that naturally accumulate on the turtle.
+                  br
+                  At first glance, this green sea turtle appears to be giving his fish buddies a ride in honor of today's World Turtle Day. But something else is going on here. Each day, reef fish like these gather in a symbiotic "cleaning station" to clean off turtles' shells. The fish eat algae and parasites that naturally accumulate on the turtle.
+                  
+                  div
+                  input.btn.btn-default.display-form(type='button', value='Poster un commentaire')
+                  .formulaire        
+                      form(action='/reponse?r=turtle' method='post') 
+                        include ../includes/form.pug
+                  h2 comments
+                  
+                  include ../includes/message.pug
+                  
+                  include ../includes/menu.pug
+
+                  include ../includes/footer.pug  

@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Handlee', cursive;
+}
+h1,
+h2 {
+    color: magenta;
+    text-align: center;
+    margin: 35px;
+    text-transform: capitalize;
+}
+h2 {
+    font-size: 16px;
+}
+p {
+    margin: 25px 0;
+    text-align: justify;
+}
+ul li {
+    list-style: none;
+}
+ul.menu {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+}
+ul.menu li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 20px;
+}
+form {
+    text-align: center;
+    margin: 50px;
+}
+input {
+    margin: 0 0 20px 0;
+    font-weight: bold;
+}
+input[type=text] {
+    margin: 0 0 20px 0;
+    font-weight: bold;
+    color: cadetblue;
+    width: 100%;
+    font-size: 25px;
+    height: 30px;
+    text-align: center;
+}
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+p.logged {
+    font-size: 2em;
+    text-align: center;
+}
+.logged {
+    font-size: 3em;
+    color: cadetblue;
+    font-family: "courrier", Georgia;
+}
+img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+}
+.menu {
+    margin: 2px 0 20px -20px;
+    font-size: 20px;
+}
+.error {
+    font-size: 5em;
+}
+a:visited {
+    color: rgb(0, 0, 238);
+}
+.home ul li {
+    display: inline-block;
+    width: 48%;
+    margin: 0 5px;
+}
+.home ul li img {
+    width: 100%;
+}
+.formulaire {
+    border: #eae7e7 1px solid;
+    display: none;
+    margin: 0 auto;
+}
+.formulaire textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 1.1em;
+}
+.formulaire input {}
+.formulaire input[type=submit] {
+    padding: 5px 20px;
+}
+.messages {
+    padding: 30px 0;
+    margin: 15px 0;
+    border-top: #eae7e7 1px solid;
+    border-bottom: #eae7e7 1px solid;
+}
+.messages .user h2 {
+    text-align: left;
+    margin: 0;
+}
+.messages p {
+    text-align: justify;
+    width: 100%;
+    margin: 20px 0;
+}
+.messages span {
+    display: inline-block;
+    color: darkgray;
+    font-size: 1.1em;
+}
+.messages .date {
+    text-align: right;
+}
+.nocomment {
+    color: darkgray;
+    font-size: 15px;
+}
+.intro {
+    font-size: 20px;
+}
+.nav-pills {
+    text-align: center;
+}
+.nav-pills>li {
+    float: none;
+}
+.nav>li {
+    display: inline-block;
+}
+mark {
+    background: chartreuse;
+    color: #666;
+}

@@ -1,0 +1,31 @@
+doctype html
+html(lang='en')
+    include ../includes/head.pug
+    body
+    h1= titre
+    h2= soustitre
+    .container
+        .col-lg-12
+            a(href='/')
+                img(src='../img/PolarBearPlunge_EN-US12456463133_1366x768.jpg', alt='image')
+            .row
+              .col-lg-8.col-centered
+                p  
+                  | January 1, 2016 
+                p
+                  | Welcome to 2016. If you need a bit of bracing trivia to shake off last night’s celebrating, we are here to help. A polar bear can stay submerged for up to three minutes, a nifty trick when sneaking up on prey perched on ice at the water’s edge. For a large bear, it’s also a remarkably skilled long-distance swimmer, able to swim for several days if necessary. As polar ice shrinks, scientists have had more opportunities to observe the polar bear’s swimming abilities.
+                  br
+                  | And if you were one of the brave folks who ventured out this morning to take part in a polar bear plunge, we salute you! Hopefully, there were no actual polar bears in attendance.
+                  
+                  div
+                  input.btn.btn-default.display-form(type='button', value='Poster un commentaire')
+                  .formulaire        
+                      form(action='/reponse?r=polar-bear' method='post') 
+                        include ../includes/form.pug
+                  h2 comments
+                  
+                  include ../includes/message.pug
+                  
+                  include ../includes/menu.pug
+
+                  include ../includes/footer.pug  

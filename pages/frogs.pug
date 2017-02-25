@@ -1,0 +1,33 @@
+doctype html
+html(lang='en')
+    include ../includes/head.pug
+    body
+    h1= titre
+    h2= soustitre
+    .container
+        .col-lg-12
+            a(href='/')
+                img(src='../img/FrogSibs_EN-US11029023450_1366x768.jpg', alt='image')
+            .row
+              .col-lg-8.col-centered
+                p
+                  | April 10, 2015   
+                p
+                  | Also known as green flying frogs, or Reinwardt's tree frogs, these amphibians have one feature that sets them apart: The webbing between their toes that helps them glide through the air.
+
+                  While most frogs use their webbed feet exclusively for swimming, black-webbed tree frogs, and other frogs in their genus, use the extra surface area like a sort of built-in hang glider. Opening their feet wide as they leap from tree to tree, they can cover a little more distance than they might otherwise be capable of.
+
+                  This handy adaptation means black-webbed tree frogs can spend most of their time up in the relative safety of the forest canopies in the Southeast Asian subtropics. On the forest floor, they’d be more exposed to predators.
+
+                  div
+                  input.btn.btn-default.display-form(type='button', value='Poster un commentaire')
+                  .formulaire        
+                      form(action='/reponse?r=frogs' method='post') 
+                        include ../includes/form.pug
+                  h2 comments
+                  
+                  include ../includes/message.pug
+                  
+                  include ../includes/menu.pug
+
+                  include ../includes/footer.pug  
