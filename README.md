@@ -3,11 +3,11 @@
 version.1 Sample pages with gallery and add comments form 
 
 ## Tech 
-* [node.js] - evented I/O for the backend
-* [Express] - fast node.js network app framework
-* [Pug] - template engine for Node.js 
-* [Twitter Bootstrap] - great UI boilerplate for modern web apps
-* [jQuery] - write less, do more...
+- **[node.js]** - evented I/O for the backend
+- **[Express]** - fast node.js network app framework
+- **[Pug]** - template engine for Node.js 
+- **[Twitter Bootstrap]** - great UI boilerplate for modern web apps
+- **[jQuery]** - write less, do more...
  
 #### To do
   - Add user session
