@@ -1,5 +1,6 @@
 /**
- * [nodejs server]
+ * [nodejs server] blog
+ * https://github.com/roro75/
  * version 1 - 20170225
  */
 var MongoClient = require('mongodb').MongoClient;
